@@ -1,15 +1,16 @@
-const main = document.querySelector('.main')
-const btn = document.getElementById('down')
-const services = document.querySelectorAll('.service')
-const second = document.querySelector('.second')
-const first = document.querySelector('.first')
-const third = document.querySelector('.third')
-const closeInfo = document.querySelector('.close')
-const fillBtn = document.querySelector('#fill')
-const foorth = document.querySelector('.foorth')
-const submit = document.querySelector('.submit')
-const thx = document.querySelector('.thx')
-const form = document.querySelector('.form')
+let main = document.querySelector('.main'),
+    btn = document.getElementById('down'),
+    services = document.querySelectorAll('.service'),
+    second = document.querySelector('.second'),
+    first = document.querySelector('.first'),
+    third = document.querySelector('.third'),
+    closeInfo = document.querySelector('.close'),
+    fillBtn = document.querySelector('#fill'),
+    foorth = document.querySelector('.foorth'),
+    submit = document.querySelector('.submit'),
+    thx = document.querySelector('.thx'),
+    form = document.querySelector('.form')
+
 services.forEach(element => {
     element.addEventListener('mouseover', () => {
         element.style.backgroundSize = `120% 120%`
@@ -22,7 +23,6 @@ services.forEach(element => {
 
 
 btn.addEventListener('click', () => {
-    // second.style.marginTop = `-100vh`
     first.style.marginTop = `-100vh`
 })
 closeInfo.addEventListener('click', () => {
